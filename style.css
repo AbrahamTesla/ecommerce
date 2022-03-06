@@ -3,3 +3,55 @@ body {
    padding: 0;
    margin: 0;
 }
+
+nav {
+   padding: 20px 50px;
+   color: white;
+   background-color: #111;
+}
+
+.navTop {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.search {
+   display: flex;
+   align-items: center;
+   background-color: gray;
+   padding: 10px;
+   border-radius: 10px;
+}
+
+.searchInput {
+   border: none;
+   background-color: transparent;
+}
+
+.searchInput::placeholder {
+   color: lightgrey;
+}
+
+.limitedOffer {
+   font-size: 20px;
+   cursor: pointer;
+   border-bottom: 2px solid green;
+}
+
+.magnifyingLens {
+   opacity: 0.5;
+}
+
+.navBottom {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.menuItem {
+   margin-right: 50px;
+   color: lightgray;
+   font-weight: 400;
+   cursor: pointer;
+}
