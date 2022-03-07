@@ -5,7 +5,7 @@ body {
 }
 
 nav {
-   padding: 20px 50px;
+   padding: 10px 50px;
    color: white;
    background-color: #111;
 }
@@ -54,4 +54,98 @@ nav {
    color: lightgray;
    font-weight: 400;
    cursor: pointer;
+}
+
+.slider {
+   background: url('https://images.unsplash.com/photo-1575722290270-626b0208df99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGRhcmslMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60');
+   /* hide the scroll bar left-right */
+   overflow: hidden;
+}
+
+.sliderWrapper {
+   display: flex;
+   width: 500vw;
+   transition: all 1s ease-in-out;
+}
+
+.sliderItem {
+   width: 100vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+
+.sliderImg {
+   width: 500px;
+   height: 500px;
+   opacity: 0.6;
+   /* background-color: transparent; */
+}
+.sliderTitle {
+   position: absolute;
+   top: 10%;
+   right: 10%;
+   color: white;
+   text-align: center;
+   font-size: 60px;
+   font-weight: 900;
+   width: 25%;
+}
+
+.sliderPrice {
+   position: absolute;
+   top: 10%;
+   left: 10%;
+   color: white;
+   font-size: 60px;
+   font-weight: 300;
+   padding: 10px;
+   border: 1px solid gray;
+}
+
+.buyButton {
+   position: absolute;
+   top: 50%;
+   right: 10%;
+   color: white;
+   font-size: 20px;
+   font-weight: 600;
+   padding: 10px;
+   background-color: black;
+   cursor: pointer;
+   border: 1px solid gray;
+}
+
+.buyButton:hover {
+   background-color: white;
+   color: black;
+}
+/* For the Background Cirlce */
+/* .sliderItem:nth-child(1) .sliderBg {
+   background-color: teal;
+}
+
+.sliderItem:nth(2) .sliderBg {
+   background-color: brown;
+} */
+
+.sliderItem:nth-child(1) .buyButton {
+   background-color: teal;
+}
+
+.sliderItem:nth-child(2) .buyButton {
+   background-color: cornflowerblue;
+}
+
+.sliderItem:nth-child(3) .buyButton {
+   background-color: cornsilk;
+}
+
+.sliderItem:nth-child(4) .buyButton {
+   background-color: rgb(124, 115, 80);
+}
+
+.sliderItem:nth-child(5) .buyButton {
+   background-color: rebeccapurple;
 }
