@@ -5,7 +5,7 @@ body {
 }
 
 nav {
-   padding: 10px 50px;
+   padding: 5px 50px;
    color: white;
    background-color: #111;
 }
@@ -16,11 +16,19 @@ nav {
    justify-content: space-between;
 }
 
+.logo {
+   color: yellow;
+   font-size: 30px;
+   font-weight: 600;
+   font-style: italic;
+   border-bottom: 1px solid yellow;
+   border-radius: 50%;
+}
 .search {
    display: flex;
    align-items: center;
    background-color: gray;
-   padding: 10px;
+   padding: 5px;
    border-radius: 10px;
 }
 
@@ -57,7 +65,7 @@ nav {
 }
 
 .slider {
-   background: url('https://images.unsplash.com/photo-1575722290270-626b0208df99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGRhcmslMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60');
+   background: url('https://images.pexels.com/photos/754194/pexels-photo-754194.jpeg?cs=srgb&dl=pexels-dzenina-lukac-754194.jpg&fm=jpg');
    /* hide the scroll bar left-right */
    overflow: hidden;
 }
@@ -79,7 +87,7 @@ nav {
 .sliderImg {
    width: 500px;
    height: 500px;
-   opacity: 0.6;
+   opacity: 0.8;
    /* background-color: transparent; */
 }
 .sliderTitle {
@@ -131,7 +139,7 @@ nav {
 } */
 
 .sliderItem:nth-child(1) .buyButton {
-   background-color: teal;
+   background-color: green;
 }
 
 .sliderItem:nth-child(2) .buyButton {
@@ -139,7 +147,7 @@ nav {
 }
 
 .sliderItem:nth-child(3) .buyButton {
-   background-color: cornsilk;
+   background-color: teal;
 }
 
 .sliderItem:nth-child(4) .buyButton {
@@ -148,4 +156,81 @@ nav {
 
 .sliderItem:nth-child(5) .buyButton {
    background-color: rebeccapurple;
+}
+
+.features {
+   display: flex;
+   padding: 50px;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.feature {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+.featureIcon {
+   width: 50px;
+   height: 50px;
+}
+
+.featureTitle {
+   margin: 20px;
+   font-size: 20px;
+   font-weight: 600;
+}
+
+.featureDescription {
+   color: gray;
+   /* creating a custom width & height so if you add text it will only be contain on given width and height */
+   width: 50%;
+   height: 100px;
+}
+
+.Product {
+   background-color: whitesmoke;
+   /* product Details will be absolute for position*/
+   position: relative;
+   height: 100vh;
+}
+
+.productImg {
+   width: 40%;
+}
+
+.productDetails {
+   position: absolute;
+   top: 10%;
+   right: 0;
+   width: 40%;
+   padding: 50px;
+}
+
+.productTitle {
+   font-size: 75px;
+   font-weight: 600;
+}
+
+.productDescription {
+   color: gray;
+   font-size: 24px;
+}
+
+.colors,
+.sizes {
+   display: flex;
+}
+
+.color {
+   width: 32px;
+   height: 32px;
+   background-color: black;
+   border-radius: 5px;
+   margin-right: 5px;
+}
+
+.color:last-child {
+   background-color: darkblue;
 }
