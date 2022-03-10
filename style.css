@@ -110,6 +110,7 @@ nav {
    font-weight: 300;
    padding: 10px;
    border: 1px solid gray;
+   border-radius: 10px;
 }
 
 .buyButton {
@@ -139,11 +140,11 @@ nav {
 } */
 
 .sliderItem:nth-child(1) .buyButton {
-   background-color: green;
+   background-color: yellow;
 }
 
 .sliderItem:nth-child(2) .buyButton {
-   background-color: cornflowerblue;
+   background-color: green;
 }
 
 .sliderItem:nth-child(3) .buyButton {
@@ -151,11 +152,11 @@ nav {
 }
 
 .sliderItem:nth-child(4) .buyButton {
-   background-color: rgb(124, 115, 80);
+   background-color: orange;
 }
 
 .sliderItem:nth-child(5) .buyButton {
-   background-color: rebeccapurple;
+   background-color: maroon;
 }
 
 .features {
@@ -221,16 +222,45 @@ nav {
 .colors,
 .sizes {
    display: flex;
+   margin-bottom: 20px;
 }
 
 .color {
    width: 32px;
    height: 32px;
-   background-color: black;
+   background-color: red;
    border-radius: 5px;
    margin-right: 5px;
+   cursor: pointer;
 }
 
 .color:last-child {
    background-color: darkblue;
+}
+
+.size {
+   margin-right: 10px;
+   border-radius: 5px;
+   padding: 5px 20px;
+   border: 1px solid black;
+   cursor: pointer;
+   font-size: 20px;
+}
+
+.productButton {
+   float: right;
+   padding: 10px 20px;
+   border: 1px solid black;
+   color: white;
+   background-color: black;
+   cursor: pointer;
+   font-size: 24px;
+   font-weight: 300;
+   border-radius: 10px;
+}
+
+.productButton:hover {
+   background-color: white;
+   color: black;
+   transition: all 0.5s ease-in-out;
 }
