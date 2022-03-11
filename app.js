@@ -1,3 +1,6 @@
+const wrapper = document.querySelector('.sliderWrapper');
+const menuItems = document.querySelectorAll('.menuItem');
+
 const products = [
    {
       id: 1,
@@ -16,7 +19,7 @@ const products = [
    },
    {
       id: 2,
-      title: 'Hoodie Red',
+      title: 'Hoodie Green',
       price: 70,
       colors: [
          {
@@ -35,11 +38,11 @@ const products = [
       price: 80,
       colors: [
          {
-            code: 'blue',
+            code: 'darkblue',
             img: './img/hoodieBlue.png',
          },
          {
-            code: 'blue',
+            code: 'yellow',
             img: './img/hoodieRed.png',
          },
       ],
@@ -69,18 +72,61 @@ const products = [
             img: './img/hoodieRed.png',
          },
          {
-            code: 'blue',
-            img: './img/hoodieYellow.png',
+            code: 'gray',
+            img: './img/hoodieGray.png',
          },
       ],
    },
 ];
 
-const wrapper = document.querySelector('.sliderWrapper');
-const menuItems = document.querySelectorAll('.menuItem');
+//start with the first Item or first Element
+let choosenProduct = products[0];
+
+const currentProductImg = document.querySelector('.productImg');
+const currentProductTitle = document.querySelector('.productTitle');
+const currentProductPrice = document.querySelector('.productPrice');
+const currentProductColors = document.querySelectorAll('.color');
+const currentProductSizes = document.querySelectorAll('.size');
 
 menuItems.forEach((item, index) => {
    item.addEventListener('click', () => {
+      //change current slide
       wrapper.style.transform = `translateX(${-100 * index}vw)`;
+
+      //change the choosen product by passing the parameter 'index'
+      choosenProduct = products[index];
+
+      //change text of currentProduct by using 'textContent' method
+      currentProductTitle.textContent = choosenProduct.title;
+      currentProductPrice.textContent = '$' + choosenProduct.price;
+
+      //Initial image to show
+      currentProductImg.src = choosenProduct.colors[0].img;
+
+      //when colors are selected it will show appropriate product color & Image using the 'forEach' method
+      currentProductColors.forEach((color, index) => {
+         color.style.backgroundColor = choosenProduct.colors[index].code;
+      });
+   });
+});
+
+//changing image once color is selected. Using 'forEach' method & addEventListener.
+currentProductColors.forEach((color, index) => {
+   color.addEventListener('click', () => {
+      currentProductImg.src = choosenProduct.colors[index].img;
+   });
+});
+
+//changing the size text color & background color once it's click. Using 'forEach' method & addEventListener.
+currentProductSizes.forEach(size => {
+   size.addEventListener('click', () => {
+      // this loop will reset the style of the backgroundColor and text color of the each size
+      currentProductSizes.forEach(size => {
+         size.style.backgroundColor = 'white';
+         size.style.color = 'black';
+      });
+      //will set the current state of the size once click.
+      size.style.backgroundColor = 'black';
+      size.style.color = 'white';
    });
 });
