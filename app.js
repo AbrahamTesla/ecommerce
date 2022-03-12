@@ -130,3 +130,17 @@ currentProductSizes.forEach(size => {
       size.style.color = 'white';
    });
 });
+
+const payMentModal = document.querySelector('.payment');
+const close = document.querySelector('.close');
+const productButton = document.querySelector('.productButton');
+
+//opening the payment modal once product button is click
+productButton.addEventListener('click', () => {
+   payMentModal.style.display = 'flex';
+});
+
+//close the payment modal once the 'X' button is click
+close.addEventListener('click', () => {
+   payMentModal.style.display = 'none';
+});

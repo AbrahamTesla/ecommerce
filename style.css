@@ -28,6 +28,9 @@ nav {
    font-style: italic;
    border-bottom: 1px solid yellow;
    border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 .search {
    display: flex;
@@ -268,4 +271,122 @@ nav {
    background-color: white;
    color: black;
    transition: all 0.5s ease-in-out;
+}
+
+.payment {
+   width: 600px;
+   height: 550px;
+   background-color: white;
+   position: absolute;
+   /* to center the modal */
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   margin: auto;
+   /* to make our model to not appear initially. Only gets triggered when 'productButton' is click */
+   display: none;
+   flex-direction: column;
+   padding: 10px 20px;
+   /* Using a Box Shadow CSS Generator site */
+   -webkit-box-shadow: 5px 9px 17px 5px rgba(0, 0, 0, 0.57);
+   box-shadow: 5px 9px 17px 5px rgba(0, 0, 0, 0.57);
+}
+
+.payTitle {
+   font-size: 24px;
+   color: rgb(77, 77, 77);
+   font-weight: 400;
+}
+
+label {
+   font-weight: 300;
+   color: rgb(98, 98, 98);
+}
+
+.payInput {
+   border: none;
+   border-bottom: 1px solid rgb(209, 206, 206);
+   padding: 10px;
+   margin: 10px;
+}
+
+/* .payInput.small {
+   width: 10%;
+} */
+.payInput::placeholder {
+   color: rgb(63, 62, 62);
+}
+
+.cardIcons {
+   display: flex;
+}
+
+.cardIcon {
+   margin-right: 10px;
+}
+
+.cardInfo {
+   display: flex;
+   justify-content: space-between;
+}
+
+.small {
+   width: 30%;
+}
+
+.payButton {
+   position: absolute;
+   bottom: -40;
+   left: 0;
+   background-color: lightgray;
+   border: none;
+   cursor: pointer;
+   height: 40px;
+   width: 100%;
+   -webkit-box-shadow: 5px 9px 17px 5px rgba(0, 0, 0, 0.57);
+   box-shadow: 5px 9px 17px 5px rgba(0, 0, 0, 0.57);
+   font-weight: 700;
+}
+
+.payButton:hover {
+   background-color: rgb(6, 216, 6);
+}
+
+.close {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   background-color: lightgray;
+   padding: 5px;
+   border-radius: 50%;
+   cursor: pointer;
+   font-weight: 400;
+   -webkit-box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.61);
+   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.61);
+   /* display: flex;
+   align-items: center;
+   justify-content: center; */
+}
+
+.close:hover {
+   background-color: black;
+   color: white;
+}
+footer {
+   display: flex;
+   background-color: rgb(53, 47, 47);
+}
+.footerLeft {
+   flex: 2;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.footerLogo {
+   margin: 0px 20px;
+}
+
+.footerRight {
+   flex: 1;
 }
