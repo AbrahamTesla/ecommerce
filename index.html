@@ -13,7 +13,7 @@
    <body>
       <nav>
          <div class="navTop">
-            <div class="navItem">
+            <div class="navItem" id="navLink">
                <h1 class="logo">P & H</h1>
                <!-- <img src="./img/logo.png" width="100" height="100" alt="" /> -->
             </div>
@@ -89,8 +89,8 @@
                <h1 class="sliderTitle">Pant & Hoodies</h1>
                <h2 class="sliderPrice">$110</h2>
                <a href="#product">
-                  <button class="buyButton">BUY NOW</button> </a
-               >>
+                  <button class="buyButton">BUY NOW</button>
+               </a>
             </div>
          </div>
       </div>
@@ -171,29 +171,74 @@
             <span class="close">X</span>
          </div>
       </div>
+      <div class="featuredPants">
+         <div class="pantItem">
+            <img
+               src="https://images.pexels.com/photos/9775494/pexels-photo-9775494.jpeg?cs=srgb&dl=pexels-shvets-production-9775494.jpg&fm=jpg"
+               alt=""
+               class="pants"
+            />
+         </div>
+         <div class="pantItem">
+            <h1 class="featuredTitle">Pants that fit!</h1>
+            <h3 class="matchWithHoodie">Match it with Hoodie</h3>
+            <a href="#navLink">
+               <button class="selectStyles">Select Your Hoodie Style</button>
+            </a>
+         </div>
+         <div class="pantItem">
+            <img
+               src="https://images.pexels.com/photos/8929787/pexels-photo-8929787.jpeg?cs=srgb&dl=pexels-rodnae-productions-8929787.jpg&fm=jpg"
+               alt=""
+               class="pants"
+            />
+         </div>
+      </div>
       <footer>
          <div class="footerLeft">
             <div class="footerLogo">
-               <h1 class="logo">P & H</h1>
+               <a href="#navLink">
+                  <h1 class="logo">P & H</h1>
+               </a>
             </div>
+            <div class="circleBg"></div>
             <div class="footerMenu">
+               <h1 class="footerTitle aboutUs">About Us</h1>
+               <ul class="footerList">
+                  <li class="listItem">Our Story</li>
+                  <li class="listItem">Contact</li>
+                  <li class="listItem">Meet Our Team</li>
+                  <li class="listItem">Careers</li>
+               </ul>
+            </div>
+            <!-- <div class="footerMenu">
                <h1 class="AboutUs">About Us</h1>
                <ul class="footerList">
                   <li class="listItem">Our Story</li>
                   <li class="listItem">Contact</li>
                   <li class="listItem">Carrers</li>
                </ul>
-            </div>
+            </div> -->
             <div class="footerMenu">
-               <h1 class="AboutUs">About Us</h1>
+               <h1 class="footerTitle">Products</h1>
                <ul class="footerList">
-                  <li class="listItem">Our Story</li>
-                  <li class="listItem">Contact</li>
-                  <li class="listItem">Carrers</li>
+                  <li class="listItem">Hoodie Yellow</li>
+                  <li class="listItem">Hoodie Green</li>
+                  <li class="listItem">Hoodie Blue</li>
+                  <li class="listItem">Hoodie Orange</li>
+                  <li class="listItem">Hoodie Red</li>
                </ul>
             </div>
          </div>
-         <div class="footerRight">Rigth</div>
+         <div class="footerRight">
+            <h1 class="followUs">Follow Us!</h1>
+            <div class="footerIcons">
+               <img src="./img/facebook.png" alt="" class="socialMediaIcons" />
+               <img src="./img/instagram.png" alt="" class="socialMediaIcons" />
+               <img src="./img/tiktok.png" alt="" class="socialMediaIcons" />
+               <img src="./img/twitter.png" alt="" class="socialMediaIcons" />
+            </div>
+         </div>
       </footer>
       <script src="./app.js"></script>
    </body>

@@ -86,6 +86,7 @@ const currentProductImg = document.querySelector('.productImg');
 const currentProductTitle = document.querySelector('.productTitle');
 const currentProductPrice = document.querySelector('.productPrice');
 const currentProductColors = document.querySelectorAll('.color');
+const currentPiceColors = document.querySelectorAll('.sliderPrice');
 const currentProductSizes = document.querySelectorAll('.size');
 
 menuItems.forEach((item, index) => {
@@ -106,6 +107,11 @@ menuItems.forEach((item, index) => {
       //when colors are selected it will show appropriate product color & Image using the 'forEach' method
       currentProductColors.forEach((color, index) => {
          color.style.backgroundColor = choosenProduct.colors[index].code;
+      });
+
+      currentPiceColors.forEach(colors => {
+         colors.style.color = choosenProduct.colors[0].code;
+         colors.style.borderColor = choosenProduct.colors[0].code;
       });
    });
 });

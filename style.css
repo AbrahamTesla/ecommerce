@@ -113,11 +113,11 @@ nav {
    position: absolute;
    top: 10%;
    left: 10%;
-   color: white;
+   color: yellow;
    font-size: 60px;
    font-weight: 300;
    padding: 10px;
-   border: 1px solid gray;
+   border: 1px solid yellow;
    border-radius: 10px;
 }
 
@@ -373,9 +373,53 @@ label {
    background-color: black;
    color: white;
 }
+
+.featuredPants {
+   display: flex;
+   background-color: black;
+}
+
+.featuredTitle {
+   font-size: 24px;
+   font-weight: 400;
+   color: white;
+}
+.pantItem {
+   flex: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.pants {
+   width: 100%;
+   padding: 20px 0px;
+}
+
+.matchWithHoodie {
+   color: white;
+}
+
+.selectStyles {
+   color: black;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+   background-color: lightgrey;
+   font-size: 24px;
+   font-weight: 600;
+   border-radius: 10px;
+}
+
+.selectStyles:hover {
+   background-color: teal;
+}
+
 footer {
    display: flex;
-   background-color: rgb(53, 47, 47);
+   background-color: whitesmoke;
+   position: relative;
 }
 .footerLeft {
    flex: 2;
@@ -383,10 +427,79 @@ footer {
    justify-content: space-between;
    align-items: center;
 }
+
+a {
+   border: none;
+   text-decoration: none;
+   outline: none;
+}
+
 .footerLogo {
-   margin: 0px 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 60px 60px;
+   text-align: center;
+   z-index: 1;
+   cursor: pointer;
+   font-size: 20px;
+}
+
+.circleBg {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   position: absolute;
+   background-color: black;
+   top: 40;
+   left: 40;
+   padding: 10px;
+}
+
+.footerTitle {
+   font-size: 16px;
+   margin: 20px 0px;
+}
+
+.aboutUs {
+   margin: 0;
+}
+
+.footerList {
+   padding: 0;
+   list-style: none;
+   cursor: pointer;
+   color: rgb(121, 119, 119);
+}
+
+.listItem:hover {
+   color: blue;
 }
 
 .footerRight {
    flex: 1;
+   text-align: center;
+}
+
+.footerIcons {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+}
+
+.socialMediaIcons:hover {
+   background-color: lightgray;
+   border-radius: 5px;
+}
+
+.socialMediaIcons {
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+}
+
+.followUs {
+   font-size: 16px;
+   margin: 30px 0px;
 }
