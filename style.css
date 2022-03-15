@@ -55,10 +55,6 @@ nav {
    border-bottom: 2px solid green;
 }
 
-.magnifyingLens {
-   opacity: 0.5;
-}
-
 .navBottom {
    display: flex;
    align-items: center;
@@ -364,9 +360,6 @@ label {
    font-weight: 400;
    -webkit-box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.61);
    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.61);
-   /* display: flex;
-   align-items: center;
-   justify-content: center; */
 }
 
 .close:hover {
@@ -473,7 +466,8 @@ a {
 }
 
 .listItem:hover {
-   color: blue;
+   color: lightblue;
+   font-weight: 600;
 }
 
 .footerRight {
@@ -502,4 +496,136 @@ a {
 .followUs {
    font-size: 16px;
    margin: 30px 0px;
+}
+
+@media screen and (max-width: 480px) {
+   nav {
+      padding: 10px;
+   }
+
+   .search {
+      display: none;
+   }
+
+   /* .navItem {
+      position: relative;
+   } */
+
+   .logo {
+      margin-left: 120px;
+      font-size: 50px;
+   }
+
+   .limitedOffer {
+      display: none;
+   }
+
+   .navBottom {
+      flex-wrap: wrap;
+   }
+
+   .menuItem {
+      margin: 20px;
+      font-size: 20px;
+      font-weight: 700;
+   }
+
+   .sliderImg {
+      width: 80%;
+   }
+
+   .sliderTitle {
+      display: none;
+   }
+
+   .sliderPrice {
+      top: unset;
+      bottom: 0;
+      left: 0;
+      padding: 5px;
+      margin-left: 5px;
+   }
+
+   .buyButton {
+      top: unset;
+      bottom: 0;
+      right: 0;
+      margin-right: 10px;
+      margin-bottom: 50px;
+   }
+
+   .features {
+      flex-direction: column;
+      padding: 10px;
+   }
+
+   .featureIcon {
+      width: 30px;
+      height: 30px;
+   }
+
+   .featureTitle {
+      margin: 10px;
+   }
+
+   .Product {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: 75vh;
+   }
+
+   .productDetails {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .productTitle {
+      font-size: 50px;
+      margin: 10px 20px;
+   }
+
+   .productImg {
+      width: 80%;
+   }
+
+   .productPrice {
+      font-size: 30px;
+   }
+
+   .featuredPants {
+      flex-direction: column;
+   }
+
+   .pants {
+      width: 80%;
+   }
+
+   footer {
+      flex-direction: column;
+      align-items: center;
+   }
+   .footerLeft {
+      width: 90%;
+   }
+
+   .footerLogo {
+      display: none;
+   }
+   .circleBg {
+      display: none;
+   }
+
+   .footerRight {
+      margin-bottom: 50px;
+   }
+
+   .followUs {
+      font-size: 24px;
+      font-weight: 400;
+   }
 }
