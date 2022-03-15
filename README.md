@@ -1,6 +1,7 @@
 # Ecommerce
 
 Pants & Hoodie Website
+Has slider features. Can select any sizes and color. Modal form pops up when 'Buy Now' button is click.
 
 # Technology Used
 
