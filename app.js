@@ -28,7 +28,7 @@ const products = [
          },
          {
             code: 'black',
-            img: './img/hoodieOrange.png',
+            img: './img/hoodieblack.png',
          },
       ],
    },
@@ -43,7 +43,7 @@ const products = [
          },
          {
             code: 'yellow',
-            img: './img/hoodieRed.png',
+            img: './img/hoodieYellow.png',
          },
       ],
    },
