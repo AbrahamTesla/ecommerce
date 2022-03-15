@@ -12,8 +12,18 @@ FlexBox
 Media Queries
 Box shadow CSS Generator
 
-![alt text](http://url/to/img.png)
+# Top Page
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/AbrahamTesla/ecommerce/blob/master/img/TopPage.png)
 
-![alt text](http://url/to/img.png)
+# Middle Page
+
+![alt text](https://github.com/AbrahamTesla/ecommerce/blob/master/img/MiddlePage.png)
+
+# Bottom Page
+
+![alt text](https://github.com/AbrahamTesla/ecommerce/blob/master/img/bottomPage.png)
+
+# Modal Form Pop Up
+
+![alt text](https://github.com/AbrahamTesla/ecommerce/blob/master/img/modalForm.png)
